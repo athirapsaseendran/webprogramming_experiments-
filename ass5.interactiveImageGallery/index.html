@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowGallery | Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Glow<span>Gallery.</span></a>
+        <p>A little collection of beautiful things ✦</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="tag">COLLECT MOMENTS, NOT THINGS</p>
+            <h1>Explore the <span>visual world.</span></h1>
+            <p>Every image tells a story. Find your favourite.</p>
+        </section>
+
+        <section class="gallery-section">
+            <div class="filters">
+                <button class="filter active" data-category="all">All Images</button>
+                <button class="filter" data-category="nature">Nature</button>
+                <button class="filter" data-category="city">City</button>
+                <button class="filter" data-category="art">Aesthetic</button>
+            </div>
+
+            <div class="gallery">
+
+                <article class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85" alt="Mountain lake surrounded by nature">
+                    <div class="image-info">
+                        <h3>Into the Wild</h3>
+                        <p>Nature · 01</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="city">
+                    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=85" alt="City skyline at night">
+                    <div class="image-info">
+                        <h3>City Lights</h3>
+                        <p>City · 02</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="art">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85" alt="Soft pastel flowers">
+                    <div class="image-info">
+                        <h3>Soft Bloom</h3>
+                        <p>Aesthetic · 03</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=85" alt="Sunlight passing through a forest">
+                    <div class="image-info">
+                        <h3>Forest Dreams</h3>
+                        <p>Nature · 04</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="city">
+                    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=85" alt="Modern architectural buildings">
+                    <div class="image-info">
+                        <h3>Urban Lines</h3>
+                        <p>City · 05</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="art">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=85" alt="Dreamy landscape in warm light">
+                    <div class="image-info">
+                        <h3>Golden Hour</h3>
+                        <p>Aesthetic · 06</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=85" alt="Wild deer in a green landscape">
+                    <div class="image-info">
+                        <h3>Wild & Free</h3>
+                        <p>Nature · 07</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="art">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=85" alt="Starry sky above mountains">
+                    <div class="image-info">
+                        <h3>Cosmic Calm</h3>
+                        <p>Aesthetic · 08</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="city">
+                    <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=85" alt="Night sky over a city">
+                    <div class="image-info">
+                        <h3>After Hours</h3>
+                        <p>City · 09</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog"
+         aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+        <button class="close" id="close" aria-label="Close image viewer">&times;</button>
+        <button class="previous" id="previous" aria-label="Previous image">&#10094;</button>
+        <figure>
+            <img src="" alt="" id="lightbox-image">
+            <figcaption id="caption"></figcaption>
+        </figure>
+        <button class="next" id="next" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>Made with ♡ and a little creativity.</p>
+        <p>GlowGallery © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration and Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Registration Form -->
+        <div class="form-box">
+            <h2>Registration</h2>
+
+            <form id="registerForm">
+
+                <label>Name</label>
+                <input type="text" id="name">
+                <small id="nameError"></small>
+
+                <label>Email</label>
+                <input type="text" id="email">
+                <small id="emailError"></small>
+
+                <label>Password</label>
+                <input type="password" id="password">
+                <small id="passwordError"></small>
+
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <small id="confirmPasswordError"></small>
+
+                <button type="submit">Register</button>
+
+            </form>
+        </div>
+
+
+        <!-- Login Form -->
+        <div class="form-box">
+            <h2>Login</h2>
+
+            <form id="loginForm">
+
+                <label>Email</label>
+                <input type="text" id="loginEmail">
+                <small id="loginEmailError"></small>
+
+                <label>Password</label>
+                <input type="password" id="loginPassword">
+                <small id="loginPasswordError"></small>
+
+                <button type="submit">Login</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
